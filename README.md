@@ -21,3 +21,7 @@ These are scripts that can be used to check if a machine is set up properly for 
     $ scutil --set HostName new_hostname
     $ scutil --set LocalHostName new_hostname
     $ scutil --set ComputerName new_hostname
+    
+## Sleep
+    $ systemsetup -setsleep Never
+    $ systemsetup -setdisplaysleep Never
