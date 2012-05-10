@@ -7,7 +7,6 @@ These are scripts that can be used to check if a machine is set up properly for 
 ## Software Updates
 #### Check them.. 
     $ softwareupdate —schedule
-
 #### Disable them...
     $ softwareupdate —schedule off
   
@@ -16,12 +15,15 @@ These are scripts that can be used to check if a machine is set up properly for 
     $ scutil --get HostName 
     $ scutil --get LocalHostName
     $ scutil --get ComputerName
-
 #### Change them...
     $ scutil --set HostName new_hostname
     $ scutil --set LocalHostName new_hostname
     $ scutil --set ComputerName new_hostname
     
 ## Sleep
+#### Check them..
+    $ systemsetup -getsleep 
+    $ systemsetup -getdisplaysleep
+#### Change them...
     $ systemsetup -setsleep Never
     $ systemsetup -setdisplaysleep Never
