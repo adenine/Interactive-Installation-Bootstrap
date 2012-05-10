@@ -23,7 +23,7 @@ These are scripts that can be used to check if a machine is set up properly for 
 ## Sleep
 #### Check them..
     $ systemsetup -getsleep 
-    $ systemsetup -getdisplaysleep
 #### Change them...
     $ systemsetup -setsleep Never
     $ systemsetup -setdisplaysleep Never
+    $ systemsetup -setharddisksleep Never
