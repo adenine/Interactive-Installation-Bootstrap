@@ -13,11 +13,11 @@ These are scripts that can be used to check if a machine is set up properly for 
   
 ## Hostname
 #### Check them...
-$ scutil –-get HostName new_hostname
-$ scutil –-get LocalHostName new_hostname
-$ scutil –-get ComputerName new_hostname
+    $ scutil –-get HostName new_hostname
+    $ scutil –-get LocalHostName new_hostname
+    $ scutil –-get ComputerName new_hostname
 
 #### Change them...
-$ scutil –-set HostName new_hostname
-$ scutil –-set LocalHostName new_hostname
-$ scutil –-set ComputerName new_hostname
+    $ scutil –-set HostName new_hostname
+    $ scutil –-set LocalHostName new_hostname
+    $ scutil –-set ComputerName new_hostname
