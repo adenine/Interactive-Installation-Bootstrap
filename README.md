@@ -6,10 +6,10 @@ These are scripts that can be used to check if a machine is set up properly for 
 
 ## Software Updates
 #### Check them.. 
-  $ softwareupdate —schedule
+    $ softwareupdate —schedule
 
 #### Disable them...
-  $ softwareupdate —schedule off
+    $ softwareupdate —schedule off
   
 ## Hostname
 #### Check them...
