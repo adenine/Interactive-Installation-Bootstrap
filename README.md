@@ -23,14 +23,17 @@ These are scripts that can be used to check if a machine is set up properly for 
 ## Sleep
 #### Check them..
     $ systemsetup -getsleep 
+    $ systemsetup -getwakeonnetworkaccess
 #### Change them...
     $ systemsetup -setsleep Never
     $ systemsetup -setdisplaysleep Never
     $ systemsetup -setharddisksleep Never
+    $ systemsetup -setwakeonnetworkaccess on 
     
-## Power Issues
+## Power Issues (Note: not supported on laptops)
 #### Check them...
-    
+    $ systemsetup -getallowpowerbuttontosleepcomputer 
+    $ systemsetup -getrestartpowerfailure 
 #### Change them...
     $ systemsetup -setallowpowerbuttontosleepcomputer off
     $ systemsetup -setrestartpowerfailure on    
