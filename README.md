@@ -27,3 +27,11 @@ These are scripts that can be used to check if a machine is set up properly for 
     $ systemsetup -setsleep Never
     $ systemsetup -setdisplaysleep Never
     $ systemsetup -setharddisksleep Never
+    
+## Power Issues
+#### Check them...
+    
+#### Change them...
+    $ systemsetup -setallowpowerbuttontosleepcomputer off
+    $ systemsetup -setrestartpowerfailure on    
+
