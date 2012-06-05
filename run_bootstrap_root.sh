@@ -27,28 +27,4 @@ systemsetup -setrestartpowerfailure on
 # echo "USERS ----------------------------------------------"
 # dscl . list /Users | grep -v "^_"
 
-echo "CRASH REPORTING ------------------------------------"
-defaults write com.apple.CrashReporter DialogType none
 
-echo "EXPOSE BEING DISABLED ------------------------------"
-defaults write com.apple.dock mcx-expose-disabled -bool true
-
-echo "CHECK DOCK AUTOHIDE --------------------------------"
-defaults write com.apple.dock autohide -bool true #from here we can check what apps are in the dock
-
-echo "CHECK SCREENSAVER IDLE TIME (Should be 0) ----------"
-defaults -currentHost write com.apple.screensaver idleTime 0
-
-echo "REMOTE LOGIN ----------------------------------------"
-systemsetup -setremotelogin on
-
-echo "APPLE REMOTE EVENTS ---------------------------------"
-systemsetup -setremoteappleevents on
-
-killall Dock
-#echo "CHECK DASHBOARD BEING DISABLED ---------------------"
-# defaults read com.apple.dashboard 
-
-# defaults read /Library/Preferences/com.apple.loginwindow
-
-# osascript -e 'tell application "System Events" to get the name of every login item'
