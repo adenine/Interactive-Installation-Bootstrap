@@ -1,4 +1,4 @@
-#!/bin/bash
+	#!/bin/bash
 # This script tries to look at whether an osx 10.7 machine is ready for use
 # as a machine in an interactive installation.
 
