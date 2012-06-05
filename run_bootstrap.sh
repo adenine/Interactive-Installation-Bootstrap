@@ -15,8 +15,8 @@ softwareupdate --schedule off
 # Check the sleep setting and if it is set to wake
 echo "SLEEP SETTINGS SET TO NEVER ------------------------"
 systemsetup -setsleep Never
-systemsetup -setwakeonnetworkaccess Never
-systemsetup -setallowpowerbuttontosleepcomputer Never
+systemsetup -setwakeonnetworkaccess On
+systemsetup -setallowpowerbuttontosleepcomputer Off
 systemsetup -setrestartpowerfailure on
 
 # Check power up and down schedule
